@@ -351,7 +351,7 @@ for i, word in enumerate(rand_words):
     print('\n')
 
 
-"""all_results = []
+all_results = []
 for answer in tqdm(list_possible_answers):
     all_results.append(Game.play_game(answer, df_words_5l, debug=False))
 all_results[:10]
@@ -363,5 +363,5 @@ print('Average turns taken: {:.2f}'.format(df_all_results['turns_taken'].mean())
       'Unsolved words: {}'.format(df_all_results.query('turns_taken==7').shape[0]),
       sep='\n')
 sns.histplot(data=df_all_results['turns_taken'],
-             discrete=True)"""
+             discrete=True)
 
