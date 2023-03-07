@@ -13,11 +13,14 @@ import seaborn as sns
 from tqdm import tqdm
 from matplotlib import pyplot as plt
 from collections import defaultdict, Counter
-nltk.download('words')
+#nltk.download('words')
 
 # open text file that has possible answers
-with open('answers.txt') as file:
-    possible_answers = file.readlines()
+'''with open('poss_ans_short.txt') as file:
+    possible_answers = file.readlines()'''
+
+with open('ans_2.txt') as file2:
+    possible_answers = file2.readlines()
 
 list_possible_answers = sorted([re.sub(r'[^A-Z]', '', t.upper()) for t in possible_answers[0].split(',')])
 print(len(list_possible_answers),
